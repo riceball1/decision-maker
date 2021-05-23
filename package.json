@@ -2,14 +2,18 @@
   "name": "decision-maker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/riceball1/decision-maker",
+  "wst": "/dist/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-gh-pages": "^1.19.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

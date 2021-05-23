@@ -2,7 +2,7 @@
   "name": "decision-maker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://riceball1.github.io/decision-maker",
+  "homepage": "https://github.com/riceball1/decision-maker",
   "wst": "/dist/",
   "scripts": {
     "serve": "vue-cli-service serve",

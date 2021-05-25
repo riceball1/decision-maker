@@ -23,7 +23,7 @@
 </div>
   <button class="decisionButton" v-on:click="makeDecision" >Decide For Me</button>
   <br/>
-  <button class="resetButton" @click="resetDecisionMaker">Reset Decisons</button>
+  <button class="resetButton" @click="resetDecisionMaker">Reset Decison</button>
     </div>
 </template>
 

@@ -2,6 +2,7 @@
   <div class="main">
     <h1>{{ msg }}</h1>
     <p class="description">Need to decide between two things? Use this simple app to make the decision for you.</p>
+    
     <div class="box">
       <div class="choiceInputBox">
         <label for="choiceOne">Choice One</label>
@@ -20,9 +21,9 @@
 <div v-bind:class="{'activeChoice' : choiceTwo}" class="card"><h3>Two</h3> 
 <p>{{ choices[1] }}</p></div>
 </div>
-  <button class="decisionButton" v-on:click="makeDecision()" >Decide For Me</button>
+  <button class="decisionButton" v-on:click="makeDecision" >Decide For Me</button>
   <br/>
-  <button class="resetButton" @click="resetDecisionMaker()">Reset Decisons</button>
+  <button class="resetButton" @click="resetDecisionMaker">Reset Decisons</button>
     </div>
 </template>
 
@@ -32,7 +33,7 @@ export default {
   props: {
     msg: String
   },
-  data() {
+  data: function () {
     return {
       choices: [],
       choiceOne: false,
@@ -40,8 +41,14 @@ export default {
     }
   },
   methods: {
-    makeDecision: () => {
-      console.log('Decide for me')
+    makeDecision: function () {
+      console.log('Decide for me');
+      if (this.choiceOne || this.choiceTwo) {
+        console.log('clearing previous decision <3')
+        // reset the choices if the decision maker was already used once
+        this.choiceOne = false;
+        this.choiceTwo = false;
+      }
       if (this.choices.length !== 2) {
         alert('Please type in two choices :-) ');
         return;
@@ -53,9 +60,11 @@ export default {
         this.choiceTwo = true;
       }
     },
-    resetDecisionMaker: () => {
-      console.log(this.choices)
-      console.log('reset decision maker app')
+    resetDecisionMaker: function () {
+      console.log('reset decision maker app');
+      this.choices = [];
+      this.choiceOne = false;
+      this.choiceTwo = false;
     }
   }
 }

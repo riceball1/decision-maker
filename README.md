@@ -29,3 +29,7 @@ Run the following command in `main` branch:
 ```
 yarn deploy
 ```
+
+### Screenshot
+
+![Screenshot of App]('./assets/Screen Shot 2021-05-24 at 10.09.22 PM.png');

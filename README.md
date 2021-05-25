@@ -32,4 +32,4 @@ yarn deploy
 
 ### Screenshot
 
-![Screenshot of App]('./assets/Screen Shot 2021-05-24 at 10.09.22 PM.png');
+![Screenshot of App](https://github.com/riceball1/decision-maker/blob/main/assets/Screen%20Shot%202021-05-24%20at%2010.09.22%20PM.png);

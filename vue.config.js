@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: '/decision-maker/'
-  }
+  publicPath: '/decision-maker/',
+  lintOnSave: false
+}

@@ -1,5 +1,5 @@
 <template>
-  <Main msg="Decision Maker App"/>
+  <Main msg="Decision Maker" />
 </template>
 
 <script>

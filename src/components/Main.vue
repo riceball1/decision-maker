@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <main class="main">
     <header>
       <h1>{{ msg }}</h1>
       <p class="description">
@@ -60,7 +60,7 @@
       </button>
     </div>
     <footer>Code on <a hre="https://github.com/riceball1/decision-maker">github.com/riceball1</a> 2021</footer>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -112,7 +112,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header {
-  margin: 10px auto;
   width: 100%;
 }
 h1 {
@@ -141,8 +140,7 @@ a {
 }
 .main {
  margin: 0 auto;
- padding: 10px;
- width: 80%;
+ width: 90%;
 }
 .box {
   display: flex;

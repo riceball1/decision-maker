@@ -59,7 +59,7 @@
         reset
       </button>
     </div>
-    <footer>Code on <a hre="https://github.com/riceball1/decision-maker">github.com/riceball1</a> 2021</footer>
+    <footer>Code on <a href="https://github.com/riceball1/decision-maker">github riceball1</a> 2021</footer>
   </main>
 </template>
 

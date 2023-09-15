@@ -1,5 +1,9 @@
+<script lang="ts">
+	 import { base } from '$app/paths';
+</script>
+
 <header id="app-header">
-	<img src="/decision-logo.png" alt="decision logo" class="logo" />
+	<img src="{base}/decision-logo.png" alt="decision logo" class="logo" />
 	<h1>Decision Maker</h1>
 </header>
 

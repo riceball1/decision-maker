@@ -1,6 +1,7 @@
 <script>
 	import ChatBody from '$lib/chat/ChatBody.svelte';
 	import Header from '$lib/header/Header.svelte';
+	import '../../static/styles.css';
 </script>
 
 <div id="container">

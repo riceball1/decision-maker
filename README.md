@@ -1,34 +1,30 @@
 # decision-maker
 See website [https://www.danafng.com/decision-maker/](https://www.danafng.com/decision-maker/)
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-### Deploy to gh-pages
-Run the following command in `main` branch:
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
-yarn deploy
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
 ```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 ### Screenshot
 

@@ -1,2 +1,23 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import ChatBody from '$lib/chat/ChatBody.svelte';
+	import Header from '$lib/header/Header.svelte';
+</script>
+
+<div id="container">
+	<Header />
+	<ChatBody />
+</div>
+
+<style global>
+	#container {
+		margin: 20px auto;
+		min-width: 300px;
+		width: 80%;
+		max-width: 768px;
+	}
+	@media (min-width: 768px) {
+		#container {
+			width: 768px;
+		}
+	}
+</style>

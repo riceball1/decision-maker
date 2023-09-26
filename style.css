@@ -44,7 +44,8 @@ input[type="text"] {
     font-size: 1.25rem;
     padding: 5px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 12px;
+    border: 2px solid white;
 }
 
 .dark-theme input[type="text"]{
@@ -120,8 +121,8 @@ input[type="text"] {
     padding: 0;
     cursor: pointer;
     outline-offset: 4px;
-    margin: 40px;
-
+    margin: 20px;
+    height: 3rem;
 }
 
 .decision-button-front {
@@ -132,21 +133,60 @@ input[type="text"] {
     background-color: hsl(124, 81%, 27%);
     color: white;
     transform: translateY(-6px);
+    height: 1.5rem;
 }
 
 .decision-button:active .decision-button-front {
     transform: translateY(-2px);
 }
 
+/* Reset Button styles */
+.reset-button {
+    background-color: hsl(305, 74%, 45%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: 20px;
+    height: 3rem;
+}
+
+.reset-button-front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background-color: #96156d;
+    color: white;
+    transform: translateY(-6px);
+    height: 1.5rem;
+}
+
+.reset-button:active .reset-button-front {
+    transform: translateY(-2px);
+}
+
+
 
 /* Decision Display styles */
 .decision-display {
-    margin-top: 30px;
+    margin-top: 20px;
+    display: none;
+    transition: display 5s ease-in;
 }
 
 .decision-message {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+.chosen-option {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.show {
+    opacity: 1;
 }
 
 .dark-theme .chosen-option, .light-theme .chosen-option {
@@ -154,3 +194,19 @@ input[type="text"] {
     font-weight: bold;
     color: #ff5733;
 }
+
+
+
+/** Small Screen Sizes **/
+
+@media only screen and (max-width: 600px) {
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    input[type="text"] {
+        margin: 10px 0px;
+    }
+  }

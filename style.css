@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-width: 368px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.decision-icon {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+/* CSS styles for inputs */
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 2rem;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid lightseagreen;
+}
+
+.input-icon {
+    font-size: 24px;
+}
+
+/* Toggle button styles */
+#theme-toggle {
+    background: hsl(330, 3%, 31%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: 20px;
+}
+
+#theme-toggle-front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background-color: hsl(214, 100%, 3%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.dark-theme #theme-toggle {
+    background-color: hsl(330, 3%, 31%);
+}
+
+.dark-theme #theme-toggle-front {
+    background-color: hsl(330, 9%, 91%);
+    color: black;
+}
+
+#theme-toggle:active #theme-toggle-front {
+    transform: translateY(-2px);
+    transition: background-color 5s ease-out;
+}
+
+/* Light theme */
+.light-theme {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.dark-theme h1,
+.dark-theme p {
+    color: #f2f2f2;
+}
+
+
+/* Decision Button styles */
+.decision-button {
+    background-color: #4CAF50;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: 40px;
+
+}
+
+.decision-button-front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background-color: hsl(124, 81%, 27%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.decision-button:active .decision-button-front {
+    transform: translateY(-2px);
+}
+
+
+/* Decision Display styles */
+.decision-display {
+    margin-top: 30px;
+}
+
+.decision-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dark-theme .chosen-option, .light-theme .chosen-option {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff5733;
+}

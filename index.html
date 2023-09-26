@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Maker</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="light-theme">
+    <header>
+        <!-- Theme Toggle Button -->
+    <button id="theme-toggle"><span id="theme-toggle-front"></span></button>
+        <h1>Welcome to Decision Maker!</h1>
+        <p>Can't Decide? Let Us Help!</p>
+        <!-- Add your illustration or icon here -->
+        <div class="decision-icon">&#x1F914;</div>
+    </header>
+    
+    <div class="container">
+        
+
+        <!-- Input Choices Section -->
+        <div class="input-container">
+            <input type="text" placeholder="Choice 1">
+            <input type="text" placeholder="Choice 2">
+        </div>
+
+
+        <!-- Decision Button Section -->
+        <button class="decision-button">
+            <span class="decision-button-front">&#x2728; Decide for Me!</span> 
+        </button>
+
+
+        <!-- Decision Display Section -->
+        <div class="decision-display">
+            <p class="decision-message">The decision is:</p>
+            <p class="chosen-option"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

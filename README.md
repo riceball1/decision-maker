@@ -2,3 +2,5 @@
 
 See website [https://www.danafng.com/decision-maker/](https://www.danafng.com/decision-maker/)
 
+
+<img src="./screenshot.png" alt="screenshot">

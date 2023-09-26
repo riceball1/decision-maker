@@ -40,12 +40,19 @@ p {
 
 input[type="text"] {
     width: 350px;
-    height: 2rem;
+    height: 2.5rem;
     font-size: 1.25rem;
     padding: 5px;
     margin: 0 10px;
     border-radius: 5px;
-    border: 2px solid lightseagreen;
+}
+
+.dark-theme input[type="text"]{
+    border: 2px solid white;
+}
+
+.light-theme input[type="text"] {
+    border: 2px solid #333;
 }
 
 .input-icon {
@@ -95,7 +102,7 @@ input[type="text"] {
 
 /* Dark theme */
 .dark-theme {
-    background-color: #333;
+    background-color: black;
     color: #f2f2f2;
 }
 
